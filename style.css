@@ -52,6 +52,15 @@ body {
   padding: 0;
   margin: 0;
 }
+
+/* .burger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+} */
+
 #header{
   width: 100%;
   height: 95vh;
@@ -161,7 +170,8 @@ body {
 #services{
   background-color: rgb(255, 171, 171);
   width: 100%;
-  min-height: 100vh;
+  height: fit-content;
+  padding: 5em;
 }
 .services-container{
   display: flex;
@@ -174,6 +184,7 @@ body {
 
 .services-container h1 {
   margin-top: 5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 .services-card{
   display: flex;
@@ -230,7 +241,8 @@ body {
 }
 
 #apropos{
-  height: 100vh;
+  height: fit-content;
+  padding-bottom: 5em;
 }
 
 .apropos-container{
@@ -245,12 +257,13 @@ body {
   display: flex;
   background-color: rgb(255, 171, 171);
   padding: 1rem;
-  width: 80%;
+  width: 85%;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 .apropos-container h1{
   margin-top: 5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .apropos-container p{
@@ -271,7 +284,8 @@ body {
 #tarifs{
   background-color: rgb(255, 171, 171);
   width: 100%;
-  min-height: 100vh;
+  height: fit-content;
+  padding-bottom: 5em;
 }
 .tarifs-container{
   display: flex;
@@ -282,13 +296,15 @@ body {
 }
 .tarifs-container .titre{
   margin-top: 5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 .tarifs-card{
   display: flex;
   background-color: rgba(255, 255, 255, 0.362);
-  width: 30%;
+  max-width: 95%;
   padding: 2rem;
   border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   
 }
 .tarifs-all{
@@ -301,6 +317,42 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  color: rgb(251, 121, 121);
+}
+
+#galerie{
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 5em;
+}
+.galerie-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.galerie-container .titre{
+  margin-top: 5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.image-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 10em;
+  padding-right: 10em;
+  gap: 60px;
+}
+.galerie-image{
+  width: 30%;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  
 }
 
 
@@ -321,22 +373,41 @@ body {
     
     font-size: 0.9rem;
   }
+
   .titi{
     height: 50%;
   }
-  #services{
-    min-height: auto;
-    padding-bottom: 2em;
+
+  .services-card{
+    width: 90%;
   }
+
+
+  /* #apropos{ 
+    height: fit-content;
+   padding-bottom: 3em;
+  } */
+
   .apropos-card{
     width: 90%;
+    padding: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
     gap: 20px;
+    flex-direction: column; 
+    align-items: center;
   }
-  
+  .apropos-texte h2{
+    font-size: 1em;
+  }
+  #apropos p{
+      font-size: 0.85em;
+    }
+
 
   
   .pablo{
-    width: 50%;
+    width: 65%;
     object-fit: cover;
   }
 
@@ -350,28 +421,34 @@ body {
     flex-wrap: wrap;
   }
   .tarifs-card{
-    width: 90%;
+    width: 95%;
   }
   #tarifs{
     min-height: auto;
     padding-bottom: 3rem;
   }
-  #apropos{
-    min-height: 150vh;
+  
+  .galerie-image{
+    width: 500px;
+    height: 500px;
   }
 }
 
 @media (max-width: 640px) {
-  #apropos p{
-      font-size: 0.8em;
-    }
-}
+  .navbar{
+    display: none;
+  }
 
-@media (max-height: 1400px) {
-  #apropos p{
-      font-size: em;
-    }
-}
+  .nav-links.active {
+    display: flex;
+  }
 
+  /* .btn-burger {
+    display: block;
+  } */
 
-
+  .galerie-image{
+    width: 250px;
+    height: 250px;
+  }
+  }
