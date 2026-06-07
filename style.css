@@ -114,7 +114,7 @@ body {
 }
 
 .titi{
-  height: 35vh;
+  max-height: 35vh;
   object-fit: cover;
   border-radius: 20px;
 }
@@ -303,9 +303,10 @@ body {
 }
 .tarifs-card{
   display: flex;
+  justify-content: center;
   background-color: rgba(255, 255, 255, 0.362);
   max-width: 95%;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   
@@ -315,9 +316,59 @@ body {
   justify-content: center;
   gap: 50px;
 }
+.nac{
+  display: flex;
+  text-align: center;
+  gap: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.chien{
+  display: flex;
+  gap: 5px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.chat{
+  display: flex;
+  gap: 5px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tarif-argent{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
 
+.argent{
+  display: flex;
+  text-align: center;
+  gap: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.visite{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
 .tarifs-texte{
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 20px;
 
@@ -330,7 +381,7 @@ body {
 }
 
 #galerie{
-  width: 100%;
+  max-width: 100%;
   height: fit-content;
   padding-bottom: 5em;
 }
@@ -351,8 +402,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding-left: 5em;
-  padding-right: 5em;
+  padding-left: 2em;
+  padding-right: 2em;
   gap: 60px;
 }
 .galerie-image{
@@ -410,11 +461,13 @@ body {
 }
 .contact-texte{
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.362);
   max-width: 80%;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
@@ -530,6 +583,12 @@ body {
   #contact p{
   font-size: 1.1rem;
   text-align: center;
+}
+h1{
+  font-size: x-large;
+}
+.tarifs-card{
+  width: 95%;
 }
   
   }
