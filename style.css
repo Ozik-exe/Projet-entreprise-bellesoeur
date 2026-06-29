@@ -415,12 +415,37 @@ body {
 
 #section-map{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: fit-content;
+  min-height: 100vh;
+  padding-bottom: 5em;
+  padding-top: 5em;
+  gap: 30px;
   background-color: rgb(255, 171, 171);
 }
+.map{
+  width: 80%;
+  height: 80vh;
+  border-radius: 20px;
+}
+.map-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: rgba(255, 255, 255, 0.362);
+  border-radius: 20px;
+  padding: 3em;
+  width: 60%;
+  height: fit-content;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+
 
 
 
@@ -616,6 +641,15 @@ h1{
 }
 #tarifs{
   min-height: fit-content;
+}
+.map-card{
+  width: 95%;
+  
+  padding: 2em;
+}
+.map{
+  width: 100%;
+  height: 40vh;
 }
 
   
