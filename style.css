@@ -63,7 +63,8 @@ body {
 
 #header{
   width: 100%;
-  height: 95vh;
+  height: fit-content;
+  min-height: 100vh;
   
 }
 .header-container{
@@ -171,6 +172,7 @@ body {
   background-color: rgb(255, 171, 171);
   width: 100%;
   height: fit-content;
+  min-height: 100vh;
   padding: 5em;
 }
 .services-container{
@@ -224,8 +226,8 @@ body {
 
 #apropos{
   width: 100%;
-  height: 100vh;
-  min-height: fit-content;
+  height: fit-content;
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
   padding-bottom: 5em;
@@ -374,6 +376,7 @@ body {
 #galerie{
   max-width: 100%;
   height: fit-content;
+  min-height: 100vh;
   padding-bottom: 5em;
 }
 .galerie-container{
