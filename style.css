@@ -108,7 +108,7 @@ body {
   border-radius: 50px;
 }
 
-.akun{
+/* .akun{
   border-radius: 20px;  
   
 }
@@ -117,7 +117,7 @@ body {
   max-height: 35vh;
   object-fit: cover;
   border-radius: 20px;
-}
+} */
 .btn-contact{
   background-color: white;
   padding-top: 0.8em;
@@ -203,32 +203,14 @@ body {
   gap: 50px;
 }
 
-.services-card-2{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  background-color: rgba(255, 255, 255, 0.362);
-  width: 20%;
-  max-width: 50rem;
-  padding: 1rem;
-  border-radius: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-.services-card-3{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  background-color: rgba(255, 255, 255, 0.362);
-  width: 20%;
-  max-width: 50rem;
-  padding: 1rem;
-  border-radius: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
 
-.teddy{
-  height: 280px;
+
+
+.services-image{
   border-radius: 20px;
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .pablo{
@@ -241,7 +223,11 @@ body {
 }
 
 #apropos{
-  height: fit-content;
+  width: 100%;
+  height: 100vh;
+  min-height: fit-content;
+  align-items: center;
+  justify-content: center;
   padding-bottom: 5em;
 }
 
@@ -285,9 +271,13 @@ body {
 }
 
 #tarifs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(255, 171, 171);
   width: 100%;
   height: fit-content;
+  min-height: 100vh;
   padding-bottom: 5em;
 }
 .tarifs-container{
@@ -304,6 +294,7 @@ body {
 .tarifs-card{
   display: flex;
   justify-content: center;
+  /* flex-wrap: wrap; */
   background-color: rgba(255, 255, 255, 0.362);
   max-width: 95%;
   padding: 1rem;
@@ -416,6 +407,26 @@ body {
 }
 
 
+
+
+
+#section-map{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 171, 171);
+}
+
+
+
+
+
+
+
+
+
   #footer{
     display: flex;
     gap: 20px;
@@ -424,14 +435,18 @@ body {
     justify-content: center;
     align-items: center;
     padding: 3em;
+    background-color: rgb(255, 171, 171);
     
   }
 
   #contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: fit-content;
+  height: 100vh;
   padding-bottom: 5em;
-  background-color: rgb(255, 171, 171);
+  
 }
 #contact p{
   font-size: 1.5rem;
@@ -563,13 +578,16 @@ body {
   
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .navbar{
     display: none;
   }
 
   .nav-links.active {
     display: flex;
+  }
+  .services-card{
+    width: 350px;
   }
 
   /* .btn-burger {
@@ -589,6 +607,12 @@ h1{
 }
 .contact-texte{
   width: 95%;
+}
+#contact{
+  height: fit-content;
+}
+#tarifs{
+  min-height: fit-content;
 }
 
   
