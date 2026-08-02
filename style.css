@@ -277,16 +277,16 @@ body {
   align-items: center;
   justify-content: center;
   background-color: rgb(255, 171, 171);
-  width: 100%;
-  height: fit-content;
-  min-height: 100vh;
-  padding-bottom: 5em;
 }
 .tarifs-container{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+   width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  padding-bottom: 5em;
   gap: 7rem;
 }
 .tarifs-container .titre{
@@ -298,7 +298,8 @@ body {
   justify-content: center;
   /* flex-wrap: wrap; */
   background-color: rgba(255, 255, 255, 0.362);
-  max-width: 95%;
+  flex-wrap: wrap;
+  min-width: 40%;
   padding: 1rem;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
@@ -371,6 +372,7 @@ body {
 }
 .tarifs-texte p{
   font-weight: 600;
+  font-size: larger;
 }
 
 #galerie{
@@ -425,6 +427,11 @@ body {
   padding-top: 5em;
   gap: 30px;
   background-color: rgb(255, 171, 171);
+}
+.map-texte{
+  font-size: large;
+  text-align: center;
+  
 }
 .map{
   width: 80%;
@@ -493,6 +500,9 @@ body {
   justify-content: center;
   gap: 7rem;
 }
+.contact-p{
+  width: 70%;
+}
 .contact-texte h1{
   text-align: center;
 }
@@ -535,7 +545,7 @@ body {
 
 
 
-@media (max-width: 1315px)  {
+@media (max-width: 1024px)  {
   .navbar ul {
     gap: 15px;
   }
@@ -602,11 +612,23 @@ body {
     width: 500px;
     height: 500px;
   }
-
+  .map-card{
+    width: 90%;
+  }
+  .map{
+    width: 90%;
+    height: 55vh;
+  }
+  .map-texte{
+    font-size: x-large;
+  }
+  .contact-p{
+  width: 90%;
+}
   
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navbar{
     display: none;
   }
@@ -636,6 +658,9 @@ h1{
 .contact-texte{
   width: 95%;
 }
+.contact-p{
+  width: 90%;
+}
 #contact{
   height: fit-content;
 }
@@ -643,13 +668,15 @@ h1{
   min-height: fit-content;
 }
 .map-card{
-  width: 95%;
-  
+  width: 95%;  
   padding: 2em;
 }
 .map{
   width: 100%;
   height: 40vh;
+}
+.map-texte{
+  font-size: larger;
 }
 
   
