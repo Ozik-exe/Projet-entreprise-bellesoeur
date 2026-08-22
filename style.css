@@ -17,7 +17,8 @@ html{
     flex-wrap: wrap;
     height: 60px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 300px;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     padding: 1.5rem 0;
@@ -78,7 +79,7 @@ body {
 }
 .header-card{
   display: flex;
-  background-color: rgba(255, 255, 255, 0.305);
+  background-color: rgb(255, 255, 255);
   border-radius: 20px;         
   width: 95%;
   height: 80vh;                
@@ -98,13 +99,20 @@ body {
 .header-texte h2 {
   color: white;
 }
+.header-texte h3 {
+  color: rgb(251, 121, 121);
+  background-color: white;
+  padding: 0.5em;
+  border-radius: 30px;
+}
 .header-texte p {
   font-size: x-large;
   text-align: center;
   width: 80%;
 }
 .titre{
-  background-color: rgba(255, 255, 255, 0.338);
+  color: rgb(251, 121, 121);
+  background-color: rgb(255, 255, 255);
   padding: 1rem;
   border-radius: 50px;
 }
@@ -119,15 +127,7 @@ body {
   object-fit: cover;
   border-radius: 20px;
 } */
-.btn-contact{
-  background-color: white;
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
-  padding-left: 2em;
-  padding-right: 2em;
-  border-radius: 10px;
 
-}
 .btn-contact:hover{
     background-color: rgba(255, 255, 255, 0.445);
     transition-duration: 0.3s;
@@ -192,7 +192,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background-color: rgba(255, 255, 255, 0.362);
+  background-color: rgb(255, 255, 255);
   width: 50%;
   max-width: 25rem;
   padding: 1rem;
@@ -243,7 +243,7 @@ body {
 
 .apropos-card{
   display: flex;
-  background-color: rgb(255, 171, 171);
+  background-color: rgb(255, 255, 255);
   padding: 1rem;
   width: 85%;
   border-radius: 20px;
@@ -283,7 +283,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-   width: 100%;
+  width: 100%;
   height: fit-content;
   min-height: 100vh;
   padding-bottom: 5em;
@@ -297,7 +297,7 @@ body {
   display: flex;
   justify-content: center;
   /* flex-wrap: wrap; */
-  background-color: rgba(255, 255, 255, 0.362);
+  background-color: rgb(255, 255, 255);
   min-width: none;
   padding: 1rem;
   border-radius: 20px;
@@ -375,6 +375,48 @@ body {
   font-size: larger;
 }
 
+
+
+#section-etape{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  gap: 50px;
+}
+.etape-all {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+#section-etape h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgb(251, 121, 121);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.etape-card{
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 5em;
+  border-radius: 20px;
+  gap: 20px;
+}
+
 #galerie{
   max-width: 100%;
   height: fit-content;
@@ -386,7 +428,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 7rem;
+  gap: 3em;
+}
+#galerie p {
+  font-size: larger;
 }
 
 .galerie-container .titre{
@@ -426,7 +471,7 @@ body {
   padding-bottom: 5em;
   padding-top: 5em;
   gap: 30px;
-  background-color: rgb(255, 171, 171);
+
 }
 .map-texte{
   font-size: large;
@@ -434,29 +479,73 @@ body {
   
 }
 .map{
-  width: 80%;
+  width: 50%;
   height: 80vh;
   border-radius: 20px;
 }
 .map-card{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 40px;
-  background-color: rgba(255, 255, 255, 0.362);
+  gap: 50px;
+  background-color: rgb(255, 255, 255);
   border-radius: 20px;
-  padding: 3em;
-  width: 60%;
+  padding: 1em;
+  width: 90%;
   height: fit-content;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.map-card h2 img{
+  width: 40px;
+}
+
+.map-card p{
+  font-size: larger;
+}
+
+.map-texte-all{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 
 
 
 
+#section-certificat{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  gap: 100px;
+  
+}
 
+.certificat-card{
+  width: 500px;
+}
+
+.image-certificat{
+  width: 100px;
+}
+#section-certificat h1{
+  color: white;
+}
+
+#section-certificat p{
+  color: rgb(0, 0, 0);
+  font-size: larger;
+}
+.certificat-place{
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+}
 
 
 
@@ -518,7 +607,7 @@ body {
   align-items: center;
   gap: 20px;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.362);
+  background-color: rgb(255, 255, 255);
   max-width: 95%;
   padding: 1rem;
   border-radius: 20px;
