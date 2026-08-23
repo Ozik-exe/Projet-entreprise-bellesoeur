@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vacances Chez Sasa</title>
+    <title>Garde d'animaux à Clamart | Vacances chez Sasa, pet sitter certifiée ACACED</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="shortcut icon" href="images/pablo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="images/paws.png" type="image/x-icon">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -80,13 +80,14 @@
             </div>
         </section>
         <section id="apropos">
+            <h1 class="titre">À propos</h1>
             <div class="apropos-all">
             <img class="pablo" src="images/pablo.jpg" alt="">
             <div class="apropos-texte">
-                <h4>À propos</h4>
                 <h1>Moi c'est Samantha</h1>
                 <p>Les animaux ont toujours fait partie de ma vie ! Depuis toute petite, je suis entourée d'eux et ma passion n'a jamais cessé de grandir. Pour vous offrir le meilleur des services, j'ai obtenu l'ACACED, le certificat reconnu pour la prise en charge des chiens, chats et NAC.</p>
                 <p> <br>Chez moi à Clamart, votre compagnon est traité comme un membre de la famille : jeux, câlins, sorties et beaucoup d'attention.</p>
+                <h4>🎓 Titulaire de l'ACACED · chiens, et NAC</h4>
             </div>
             </div>
             
@@ -94,39 +95,57 @@
         <section id="tarifs">
             <div class="tarifs-container" data-aos="fade-up">
                 <h1 class="titre">Mes Tarifs</h1>
+                <h1>Des prix simples, sans surprise</h1>
+                <p>Pas de frais de plateforme, pas de commission : vous réglez directement le tarif affiché.</p>
                 <div class="tarifs-all">
                 <div class="tarifs-card">
                     <div class="tarifs-texte">
-                        <h1>GARDE À DOMICILE 🏠</h1>
-                        <div class="nac">
-                            <h4>NAC</h4>
-                        <p>5€ par jour</p>
+                        <h3>🏠 GARDE À DOMICILE</h3>
+                        <p class="tkt">Votre animal vit chez nous, comme à la maison</p>
+                        <div class="tarif-ligne">
+                            <h4>NAC (rongeur, lapin...)</h4>
+                        <p>5€/jour</p>
+                        
                         </div>
-                        <div class="chien">
-                            <h4>Chien</h4>
-                            <p>Petit gabarit : 15€ par jour <br>Grand gabarit : 25€ par jour</p>
+                        <h5>--------------------------------</h5>
+                        <div class="tarif-ligne">
+                            <h4>Chien petit gabarit :</h4>
+                            <p>15€/jour</p>
                         </div>
-                        <div class="chat"><h4>Chat</h4>
-                        <p>10€ par jour</p>
+                        <h5>--------------------------------</h5>
+                        <div class="tarif-ligne">
+                            <h4>Chien grand gabarit :</h4>
+                            <p>25€/jour</p>
+                        </div>
+                        <h5>--------------------------------</h5>
+                        <div class="tarif-ligne">
+                            <h4>Chat :</h4>
+                        <p>10€/jour</p>
                         </div>
                         
                     </div>
                 </div>
                 <div class="tarifs-card">
                     <div class="tarifs-texte">
-                        <h1>PROMENADES 🌿</h1>
-                        <div class="tarif-argent">
-                            <div class="argent">
-                                <h4>10€</h4>
-                                <p>30 minutes de balade</p>
+                        <h3>🌿 PROMENADES</h3>
+                        <p class="tkt">Sorties adaptées au rythme de votre chien</p>
+                        <div class="tarif-card">
+                            <div class="tarif-ligne">
+                                <h4>30 minutes</h4>
+                                <p>10€</p>
                             </div>
-                            <div class="argent">
-                                <h4>15€</h4>
-                                <p>45 minutes de balade</p>
+                            <h5>--------------------------------</h5>
+                            <div class="tarif-ligne">
+                                <h4>45 minutes</h4>
+                                <p>15€</p>
+                                
                             </div>
-                            <div class="argent">
-                                <h4>20€</h4>
-                                <p>1 heure de balade</p>
+                            <h5>--------------------------------</h5>
+                            <div class="tarif-ligne">
+                                <h4>1 heure</h4>
+                                <p>20€</p>
+                                
+                                
                             </div>
                 
                         </div>
@@ -134,14 +153,16 @@
             </div>
                     <div class="tarifs-card">
                             <div class="tarifs-texte">
-                                <h1>VISITES À DOMICILE 🏠</h1>
-                                <div class="visite">
+                                <h3>VISITES À DOMICILE 🏠</h3>
+                                <p class="tkt">Nourrissage, jeux et câlins chez vous</p>
+                                <div class="tarif-ligne">
                                     <h4>NAC</h4>
-                                    <p>10€ par passage</p>
+                                    <p>10€/passage</p>
                                 </div>
-                                <div class="visite">
+                                <h5>--------------------------------</h5>
+                                <div class="tarif-ligne">
                                     <h4>Chat</h4>
-                                    <p>15€ par passage</p>
+                                    <p>15€/passage</p>
                                 </div>
                                 
                         
@@ -227,10 +248,43 @@
             </div>
         </section>
 
+        <section id="section-questions">
+            <h1 class="titre">Questions Fréquentes</h1>
+            <h2>Tout ce que vous vous demandez</h2>
+            <div class="faq-all">
+            <details class="faq-item">
+            <summary>Quels animaux acceptez-vous ?</summary>
+            <p>Les chiens (petits et grands gabarits), les chats et les NAC : lapins,
+            rongeurs, etc. En cas de doute sur votre compagnon, envoyez-nous un
+            message, on vous répond vite.</p>
+        </details>
 
+        <details class="faq-item">
+            <summary>Comment se passe la première rencontre ?</summary>
+            <p>Avant toute garde, on organise une rencontre gratuite et sans engagement avec vous et votre animal. C'est l'occasion de faire connaissance, de nous transmettre ses habitudes et de vérifier qu'il se sent bien.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>Aurai-je des nouvelles pendant la garde ?</summary>
+            <p>Oui, tous les jours ! Vous recevez photos et petites nouvelles sur WhatsApp pour partir l'esprit vraiment tranquille.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Que dois-je prévoir pour une garde à domicile ?</summary>
+            <p>Sa nourriture habituelle, son carnet de santé, et ce qui le rassure : panier, jouets, couverture. Le reste, on s'en occupe.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Comment réserver ?</summary>
+            <p>Le plus simple : un message WhatsApp avec vos dates et le type d'animal. Vous pouvez aussi nous appeler ou envoyer un SMS au 06 69 14 45 84.</p>
+        </details>
+
+        </div>
+
+
+        </section>
 
 
         <section id="section-certificat">
+            <h1 class="titre">Pourquoi me choisir ?</h1>
             <div class="certificat-place">
                     <div class="certificat-card">
                         <img class="image-certificat" src="images/diplome.png" alt="">

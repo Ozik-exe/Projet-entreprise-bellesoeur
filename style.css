@@ -14,6 +14,9 @@ html{
 .navbar{
     background-color: rgb(255, 171, 171);
     display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 50;
     flex-wrap: wrap;
     height: 60px;
     align-items: center;
@@ -115,6 +118,8 @@ body {
   background-color: rgb(255, 255, 255);
   padding: 1rem;
   border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  font-size: medium;
 }
 
 /* .akun{
@@ -240,12 +245,13 @@ body {
 
 #apropos{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   min-height: 100vh;
   height: fit-content;
-  background-color: white;
+  gap: 50px;
 }
 
 .apropos-all{
@@ -256,12 +262,20 @@ body {
   gap: 50px;
 }
 .apropos-texte{
-  wi
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 #apropos h4{
-
+  margin-top: 3em;
+  padding: 1em;
   color: rgb(251, 121, 121);
+  background-color: rgb(255, 206, 206);
+  width: fit-content;
+  border-radius: 20px;
+  border: 2px solid currentColor;
+  font-weight: 800;
 
 
   
@@ -283,53 +297,48 @@ body {
   height: fit-content;
   min-height: 100vh;
   padding-bottom: 5em;
-  gap: 7rem;
+  gap: 3rem;
 }
 .tarifs-container .titre{
   margin-top: 5rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 .tarifs-card{
-  display: flex;
-  justify-content: center;
-  /* flex-wrap: wrap; */
-  background-color: rgb(255, 255, 255);
-  min-width: none;
-  padding: 1rem;
-  border-radius: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  
+
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
+
+.tarifs-texte{
+  width: 100%;
+}
+
+#tarifs h5{
+  color: rgba(0, 0, 0, 0.203);
+}
+.tarif-ligne p{
+  color: rgb(251, 121, 121);
+}
+
+
+
 .tarifs-all{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
   gap: 50px;
 }
-.nac{
-  display: flex;
-  text-align: center;
-  gap: 5px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.tarif-ligne {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
-.chien{
-  display: flex;
-  gap: 5px;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.chat{
-  display: flex;
-  gap: 5px;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
+
 .tarif-argent{
   text-align: center;
   display: flex;
@@ -356,18 +365,18 @@ body {
   flex-direction: column;
   gap: 5px;
 }
-.tarifs-texte{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-
+.tkt {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  
 }
 .tarifs-texte h1{
-  color: rgb(251, 121, 121);
+  color: rgb(0, 0, 0);
+  
+  
 }
 .tarifs-texte p{
-  font-weight: 600;
+  font-weight: 400;
   font-size: larger;
 }
 
@@ -411,6 +420,7 @@ body {
   padding: 5em;
   border-radius: 20px;
   gap: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 #galerie{
@@ -418,6 +428,7 @@ body {
   height: fit-content;
   min-height: 100vh;
   padding-bottom: 5em;
+  background-color: rgb(255, 171, 171);
 }
 .galerie-container{
   display: flex;
@@ -444,8 +455,8 @@ body {
   gap: 60px;
 }
 .galerie-image{
-  width: 30%;
-  height: 50vh;
+  width: 20%;
+  height: 40vh;
   object-fit: cover;
   border-radius: 50px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
@@ -506,6 +517,70 @@ body {
   gap: 50px;
 }
 
+#section-questions{
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(255, 171, 171);
+}
+
+#section-questions h2{
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+
+.faq-all{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 10px;
+}
+.faq-item{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 1.2rem 1.8rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.faq-item summary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    font-weight: bold;
+    color: #4a3b45;
+    cursor: pointer;
+    list-style: none;      /* enlève la flèche par défaut */
+}
+
+.faq-item summary::-webkit-details-marker{
+    display: none;         /* idem pour Safari/Chrome */
+}
+
+/* le + / − à droite */
+.faq-item summary::after{
+    content: "+";
+    color: #f57c7c;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.faq-item[open] summary::after{
+    content: "−";          /* vrai signe moins U+2212 */
+}
+
+.faq-item p{
+    margin: 1rem 0 0;
+    color: #8a7a5c;
+    line-height: 1.6;
+}
+
 
 
 
@@ -529,7 +604,7 @@ body {
 .image-certificat{
   width: 100px;
 }
-#section-certificat h1{
+.certificat-card h1{
   color: white;
 }
 
@@ -555,7 +630,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 3em;
-    background-color: rgb(255, 171, 171);
+  
     
   }
 
@@ -566,6 +641,7 @@ body {
   width: 100%;
   height: 100vh;
   padding-bottom: 5em;
+  background-color: rgb(255, 171, 171);
   
 }
 #contact p{
