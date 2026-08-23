@@ -191,11 +191,10 @@ body {
 .services-card{
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  
   background-color: rgb(255, 255, 255);
   width: 50%;
   max-width: 25rem;
-  padding: 1rem;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
@@ -205,72 +204,69 @@ body {
   gap: 50px;
 }
 
+.services-card-texte{
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.services-card-texte h4{
+  padding-top: 1em;
+  color: rgb(251, 121, 121);
+  margin-top: auto;
+
+  
+}
 
 
 
 .services-image{
-  border-radius: 20px;
   height: 300px;
   width: 100%;
   object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .pablo{
   
   max-width: 100%;
-  width: 25%;
-  height: auto;
+  width: 35%;
+  aspect-ratio: 1;
+  object-fit: cover;
   border-radius: 20px;
   
 }
 
 #apropos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: fit-content;
   min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 5em;
+  height: fit-content;
+  background-color: white;
 }
 
-.apropos-container{
+.apropos-all{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 3rem;
+  align-items: center;
+  width: 65%;
+  gap: 50px;
 }
-
-.apropos-card{
-  display: flex;
-  background-color: rgb(255, 255, 255);
-  padding: 1rem;
-  width: 85%;
-  border-radius: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-.apropos-container h1{
-  margin-top: 5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-
-.apropos-container p{
-  font-size: large;
-  text-align: center;
-  width: 75%;
-}
-
 .apropos-texte{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5em;
-  gap: 25px;
+  wi
 }
-.apropos-texte h2{
-  font-weight: 600;
+
+#apropos h4{
+
+  color: rgb(251, 121, 121);
+
+
+  
 }
+
 
 #tarifs{
   display: flex;
