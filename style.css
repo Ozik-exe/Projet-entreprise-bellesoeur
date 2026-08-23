@@ -658,6 +658,7 @@ body {
   padding-bottom: 5em;
   background-color: rgb(255, 171, 171);
   
+  
 }
 #contact p{
   font-size: 1.5rem;
@@ -694,7 +695,8 @@ body {
   align-items: center;
   gap: 20px;
   flex-direction: column;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.368);
+   border: 2px solid rgb(251, 121, 121);;
   max-width: 95%;
   padding: 1rem;
   border-radius: 20px;
@@ -835,6 +837,11 @@ body {
     height: 150px;
     border-radius: 20px;
   }
+
+  .faq-all{
+    width: 90%;
+  }
+
   #contact p{
   font-size: 1.1rem;
   text-align: center;
