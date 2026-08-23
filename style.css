@@ -392,9 +392,13 @@ body {
   height: fit-content;
   min-height: 100vh;
   gap: 50px;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
 }
 .etape-all {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
   gap: 50px;
   flex-wrap: wrap;
@@ -486,23 +490,26 @@ body {
   
 }
 .map{
-  width: 50%;
-  height: 80vh;
+  width: 500px;
+  height: 500px;
   border-radius: 20px;
 }
 .map-card{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 50px;
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
-  padding: 1em;
-  width: 90%;
+  padding: 2em;
+  width: 70%;
   height: fit-content;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
+.map-card h5{
+  color: rgba(0, 0, 0, 0.203);
+}
+
 .map-card h2 img{
   width: 40px;
 }
@@ -525,6 +532,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 5em;
+  padding-top: 5em;
   background-color: rgb(255, 171, 171);
 }
 
@@ -592,8 +601,12 @@ body {
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 100vh;
+  height: fit-content;
+  min-height: 100vh;
+  padding-bottom: 5em;
+  padding-top: 5em;
   gap: 100px;
+  
   
 }
 
@@ -616,6 +629,8 @@ body {
   display: flex;
   gap: 100px;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -707,12 +722,8 @@ body {
 
 
 @media (max-width: 1024px)  {
-  .navbar ul {
-    gap: 15px;
-  }
-  .navbar a{
-    
-    font-size: 0.9rem;
+  .navbar ul{
+    display: none;
   }
 
   .titi{
@@ -724,10 +735,9 @@ body {
   }
 
 
-  /* #apropos{ 
-    height: fit-content;
-   padding-bottom: 3em;
-  } */
+  .map-card{
+    flex-direction: column;
+  }
 
   .apropos-card{
     width: 90%;
@@ -744,6 +754,9 @@ body {
   #apropos p{
       font-size: 0.85em;
     }
+    .apropos-all{
+    flex-direction: column;
+  }
 
 
   
@@ -790,24 +803,37 @@ body {
 }
 
 @media (max-width: 767px) {
-  .navbar{
+  .navbar ul{
     display: none;
   }
 
   .nav-links.active {
     display: flex;
   }
+
+  .apropos-all{
+    flex-direction: column;
+  }
+
   .services-card{
     width: 350px;
   }
 
-  /* .btn-burger {
-    display: block;
-  } */
+  .etape-card{
+    width: 80%;
+  }
+  .map-card{
+    flex-direction: column;
+  }
+
+  .certificat-card{
+  width: 300px;
+}
 
   .galerie-image{
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
   }
   #contact p{
   font-size: 1.1rem;
