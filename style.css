@@ -117,6 +117,7 @@ body {
   color: rgb(251, 121, 121);
   background-color: rgb(255, 255, 255);
   padding: 1rem;
+  margin-top: 5rem;
   border-radius: 50px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   font-size: medium;
@@ -250,7 +251,7 @@ body {
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  height: fit-content;
+ box-sizing: border-box; 
   gap: 50px;
 }
 
@@ -258,6 +259,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 5rem;
   width: 65%;
   gap: 50px;
 }
@@ -301,7 +303,6 @@ body {
   gap: 3rem;
 }
 .tarifs-container .titre{
-  margin-top: 5rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 .tarifs-card{
@@ -448,7 +449,7 @@ body {
 }
 
 .galerie-container .titre{
-  margin-top: 5rem;
+  
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 .image-card{
@@ -807,7 +808,7 @@ body {
   
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .navbar ul{
     display: none;
   }
@@ -815,11 +816,10 @@ body {
   .nav-links.active {
     display: flex;
   }
-
   .apropos-all{
     flex-direction: column;
   }
-
+  
   .services-card{
     width: 350px;
   }
