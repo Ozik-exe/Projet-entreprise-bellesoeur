@@ -15,21 +15,19 @@ html{
   scroll-behavior: smooth;
 }
 
-.navbar{
-    background-color: rgb(255, 171, 171);
-    display: flex;
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    flex-wrap: wrap;
-    height: 60px;
-    align-items: center;
-    justify-content: center;
-    gap: 300px;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    padding: 1.5rem 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+.navbar {
+  background-color: rgb(255, 171, 171);
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  align-items: center;
+  justify-content: space-around; /* au lieu de center + gap 300px */
+  padding: 10px 30px;             /* au lieu de height fixe */
+  min-height: 60px;               /* min au lieu de height */
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .navbar p {
@@ -73,17 +71,13 @@ body {
   width: 100%;
   height: fit-content;
   min-height: 100vh;
-  
-}
-.header-container{
   display: flex;
   justify-content: center;
   align-items: center;      
-  height: 100vh;       
-  text-align: center;       
-  padding: 20px;
-
+  text-align: center; 
+  
 }
+
 .header-card{
   display: flex;
   background-color: rgb(255, 255, 255);
@@ -112,11 +106,35 @@ body {
   padding: 0.5em;
   border-radius: 30px;
 }
+.header-texte a{
+  gap: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  border-radius: 25px;
+}
+
+
 .header-texte p {
   font-size: x-large;
   text-align: center;
   width: 80%;
 }
+.div-btn-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 500px;
+  flex-wrap: wrap;
+  gap: 10px;
+  text-decoration: none;
+  
+
+}
+
+
+
 .titre{
   color: rgb(251, 121, 121);
   background-color: rgb(255, 255, 255);
@@ -154,6 +172,31 @@ body {
 
 .btn-moi{
 
+}
+
+.btn-header{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  border: 2px solid rgb(251, 121, 121);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.btn-header:hover{
+  color: rgb(255, 194, 194);
+  transition-duration: 0.3s;
+}
+
+
+.header-image{
+  width: 25px;
+  height: 25px;
 }
 
 .btn-moi:hover{
@@ -207,7 +250,7 @@ body {
   width: 50%;
   max-width: 25rem;
   border-radius: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.34);
 }
 .services-card-all{
   display: flex;
@@ -293,7 +336,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+
   background-color: rgb(255, 171, 171);
 }
 .tarifs-container{
@@ -317,7 +360,7 @@ body {
     width: 30%;
     padding: 2rem;
     border-radius: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.34);
 }
 
 .tarifs-texte{
@@ -345,6 +388,9 @@ body {
     justify-content: space-between;
     align-items: baseline;
 }
+/* .tarifs-texte h3{
+    text-align: center;
+} */
 
 
 .tarif-argent{
@@ -374,8 +420,9 @@ body {
   gap: 5px;
 }
 .tkt {
-  margin-bottom: 1em;
-  margin-top: 1em;
+  margin-bottom: 1.5em;
+  margin-top: 0.2em;
+  
   
 }
 .tarifs-texte h1{
@@ -383,7 +430,7 @@ body {
   
   
 }
-.tarifs-texte p{
+.tarif p{
   font-weight: 400;
   font-size: larger;
 }
@@ -431,11 +478,11 @@ body {
   padding: 5em;
   border-radius: 20px;
   gap: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.34);
 }
 
 #galerie{
-  max-width: 100%;
+  width: 100%;
   height: fit-content;
   min-height: 100vh;
 
@@ -462,8 +509,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding-left: 2em;
-  padding-right: 2em;
+
   gap: 60px;
 }
 .galerie-image{
@@ -472,7 +518,32 @@ body {
   object-fit: cover;
   border-radius: 50px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  cursor: pointer;
+  overflow: hidden;
   
+}
+.galerie-image:hover {
+  transform: scale(1.05);
+  transition-duration: 0.3s;
+}
+
+#ma-boite {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; 
+}
+
+#image-agrandie {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
 }
 
 
@@ -500,18 +571,21 @@ body {
   width: 500px;
   height: 500px;
   border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.34);
+
 }
 .map-card{
   display: flex;
   flex-direction: row;
+  gap: 50px;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
   padding: 2em;
-  width: 70%;
+  width: fit-content;
   height: fit-content;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.34);
 }
 .map-card h5{
   color: rgba(0, 0, 0, 0.203);
@@ -529,6 +603,18 @@ body {
   display: flex;
   flex-direction: column;
   gap: 50px;
+}
+.card-texte-all {
+  width: 100%;
+  max-width: 600px;
+  padding: 1em;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.34);
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+.card-texte-p{
+  width: 600px;
 }
 
 #section-questions{
@@ -660,12 +746,17 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: fit-content;
+  min-height: 100vh;
 
   background-color: rgb(255, 171, 171);
   
   
 }
+#contact .btn-header{
+  font-size: large;
+}
+
 #contact p{
   font-size: 1.5rem;
   text-align: center;
@@ -681,7 +772,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 7rem;
+  gap: 3rem;
 }
 .contact-p{
   width: 70%;
@@ -702,7 +793,7 @@ body {
   gap: 20px;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.368);
-   border: 2px solid rgb(251, 121, 121);;
+   border: 2px solid rgb(251, 121, 121);
   max-width: 95%;
   padding: 1rem;
   border-radius: 20px;
@@ -717,7 +808,7 @@ body {
 
 
 
-#services, #apropos, #tarifs, #section-etape, #galerie, #section-map, #section-questions, #section-certificat, #contact{
+#header, #services, #apropos, #tarifs, #section-etape, #galerie, #section-map, #section-questions, #section-certificat, #contact{
     padding-top: var(--padding-vertical);
     padding-bottom: var(--padding-vertical);
   }
@@ -793,9 +884,13 @@ body {
 
   }
   
+.image-card{
+  gap: 20px;
+}
   .galerie-image{
-    width: 500px;
-    height: 500px;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
   }
   .map-card{
     width: 90%;
@@ -813,13 +908,25 @@ body {
   
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
 
   
 
-
+.navbar{
+  font-size: small;
+  justify-content: space-between;
+}
   .navbar ul{
     display: none;
+  }
+  .div-btn-header{
+    width: fit-content;
+  }
+  .div-btn-header .btn-header{
+    font-size: small;
+  }
+  #header h3{
+    width: 95%;
   }
   
 
@@ -844,7 +951,9 @@ body {
   .certificat-card{
   width: 300px;
 }
-
+.image-card{
+  gap: 20px;
+}
   .galerie-image{
     width: 150px;
     height: 150px;
@@ -871,6 +980,10 @@ h1{
 #contact{
   height: fit-content;
 }
+#contact .btn-header{
+  font-size: small;
+}
+
 #tarifs{
   min-height: fit-content;
 }
@@ -884,6 +997,13 @@ h1{
 }
 .map-texte{
   font-size: larger;
+}
+.card-texte-all {
+  
+  width: 350px;
+}
+.card-texte-p{
+  width: 350px;
 }
 
 
